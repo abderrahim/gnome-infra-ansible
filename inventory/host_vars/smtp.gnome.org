@@ -28,9 +28,7 @@ dovecot_homedir: "{{ dovecot_maildir }}/%d/%u"
 dovecot_maildir: /srv/dovecot
 dovecot_shared_mailboxes:
   - name: exec
-    acl_users:
-      - allan
-      - arun
+    acl_users: []
   - name: events
     acl_users:
       - freescout-sa
